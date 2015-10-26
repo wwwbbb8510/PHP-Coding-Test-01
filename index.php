@@ -3,8 +3,8 @@
 	/*
 	 * Add your filebrowser definition code here
 	 */
+        
         $rootPath = dirname ( __FILE__ ) . DIRECTORY_SEPARATOR . 'files' . DIRECTORY_SEPARATOR;//set the root directory
-        //$exensionFilter = array();//no filter
         $exensionFilter = array('php');//set the filter
         $currentPath = isset($_REQUEST['current_path']) ? $_REQUEST['current_path'] : NULL;//get the current path from HTTP REQUEST
         $arrFiles = FileBrowser::Factory($rootPath, $currentPath, $exensionFilter)->Get();
