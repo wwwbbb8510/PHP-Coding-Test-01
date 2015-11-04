@@ -1,4 +1,4 @@
-The Space InBetween PHP test
+PHP test
 ============================
 
 The Brief
